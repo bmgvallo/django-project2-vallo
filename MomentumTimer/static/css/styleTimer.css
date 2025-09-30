@@ -1,0 +1,91 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --accent: #2c89ff;
+  --muted: #6b7280;
+  --shadow: 0 6px 18px rgba(34, 40, 49, 0.08);
+  --radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+
+.app {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  width: 320px;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#startBtn {
+  background: #27b241;
+  color: white;
+}
+#startBtn:hover {
+  background: #017316;
+}
+
+#pauseBtn {
+  background: #2690e6;
+  color: white;
+}
+#pauseBtn:hover {
+  background: #004883;
+}
+
+#resetBtn {
+  background: #b81200;
+  color: white;
+}
+#resetBtn:hover {
+  background: #770c00;
+}
